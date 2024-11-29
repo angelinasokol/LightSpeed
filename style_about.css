@@ -1,0 +1,61 @@
+*{
+    scroll-behavior:auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+    background-image:url(fon.jpg);
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+    scroll-behavior:auto;
+}
+header {
+    background: radial-gradient(circle, rgba(144,40,40,1) 0%, rgba(61,26,26,1) 100%);
+    color:#fff;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*Анимация хэдара-подсвечивание*/
+.header__item {
+    position: relative;
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+    color: #fff;
+    margin-right: 15px;
+  }
+.header__item:hover:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 20px;
+    margin-top: 50px;
+    box-shadow: 0 0 50px 10px rgb(23, 0, 9);
+}/*Анимация хэдара-подсвечивание*/
+
+/*Стиль хэдара*/
+nav a {
+    color: #fff;
+    margin: 0 30px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*Стиль футера*/
+.footer {
+    background: rgb(144,40,40);
+    background: radial-gradient(circle, rgba(144,40,40,1) 0%, #3d1a1a 100%);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-align: center; 
+    width: 100%;   
+    font-size: 19px;
+    font-weight: bold;
+    color: #fafaff;  
+}

@@ -1,0 +1,479 @@
+*{
+    scroll-behavior:auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+    scroll-behavior:auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+    background: radial-gradient(circle, rgba(144, 40, 40, 1) 0%, rgba(61, 26, 26, 1) 100%);
+    color: #fff;
+    text-align: center;
+    margin: auto;
+}
+
+/*Анимация хэдара-подсвечивание*/
+.header__item {
+    position: relative;
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+    color: #fff;
+    margin-right: 15px;
+  }
+/*Анимация хэдара-подсвечивание*/
+nav {
+    display: flex;
+    gap: 20px;
+}
+/*Стиль хэдара*/
+nav a {
+    color: #fff;
+    margin: 0 30px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.content, .conditions, .fleet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 95%;
+    background-color: #e8e8e8cb;
+}
+/*Стиль дива выбора авто*/
+.content {
+    color: rgb(144,40,40);
+    text-align: center;
+    margin: auto;
+    width: 95%;
+    background-color: #e8e8e8cb;
+}
+input{
+    width: 250px;
+    height: 30px;
+    
+}
+select{
+    margin:10px;
+    width: 515px;
+    height: 30px;
+    font-size: medium;
+}/*Стиль выбора авто*/
+
+/*Стиль кнопки*/
+.pick{
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    margin:10px;
+    width: 515px;
+    height: 50px;
+    font-size:larger;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgba(144,40,40,1) 0%, #3d1a1a 100%);
+}
+.pick:hover {
+    background-position: right center;
+}/*Стиль кнопки*/
+
+/*Стиль дива с условиями аренды*/
+.conditions{
+    background-color: #e8e8e8cb;
+    color: rgb(144,40,40);
+    text-align: center;
+    width: 95%;
+    margin: auto; 
+   
+}
+img{
+    width: 80px;
+    height: 80px;
+    align-content: center;
+    padding: 30px;
+}
+h3{
+    width: 70%;
+}
+label{
+    font-weight: bold;
+}
+.onediv{
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+.twodiv{
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 30px; 
+}
+.experienced,.aged{
+    margin: 15px;
+    padding: 15px;
+    
+}
+/*Стиль дива с условиями аренды*/
+
+/*Стиль дива с автопарком*/
+.fleet {
+    justify-content: center;
+    align-items: center; 
+    background-color: #e8e8e8cb;
+    color: rgb(144, 40, 40);
+    text-align: center;
+    width: 95%;
+    display: flex; 
+    margin: auto;
+}
+
+/* Стиль контейнера LADA Granta */
+.LADAGranta {
+    background: rgba(255, 255, 255, 0.339);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: auto; 
+}
+
+.LADAGranta img.ld {
+    width: 160px;
+    height: 140px;
+    border-radius: 8px;
+    outline: 2px solid rgb(144,40,40);
+    box-shadow:10px 5px 5px #3d1a1a;
+    margin: 10px;
+    object-fit: contain;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.LADAGranta .details a {
+    color: rgb(144,40,40);
+    font-weight: bold;
+}
+.LADAGranta .details p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+.price-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price-section .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+.price-section button {
+    background: rgb(144,40,40);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+.price-section button:hover {
+    background: #3d1a1a;
+}/* Стиль контейнера LADA Granta*/
+
+/* Стиль контейнера HavalJolion*/
+.HavalJolion {
+    background: rgba(255, 255, 255, 0.339);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: auto;
+    
+}
+.HavalJolion img.hj {
+    width: 160px;
+    height: 140px;
+    border-radius: 8px;
+    outline: 2px solid rgb(144,40,40);
+    box-shadow:10px 5px 5px #3d1a1a;
+    margin: 10px;
+    object-fit: cover;
+}
+.detailsH{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.HavalJolion .detailsH a {
+    color: rgb(144,40,40);
+    font-weight: bold;
+}
+.HavalJolion .detailsH p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    margin: 10px;
+}
+.price-sectionH {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price-sectionH .priceH {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+.price-sectionH button {
+    background: rgb(144,40,40);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+.price-sectionH button:hover {
+    background: #3d1a1a;
+}/* Стиль контейнера HavalJolion*/
+.BMWM3 { 
+    background: rgba(255, 255, 255, 0.339);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: auto;
+}
+.BMWM3 img.bm {
+    width: 160px;
+    height: 140px;
+    border-radius: 8px;
+    outline: 2px solid rgb(144,40,40);
+    box-shadow:10px 5px 5px #3d1a1a;
+    margin: 10px;
+    object-fit: contain;
+}
+.detailsB{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.BMWM3 .detailsB a {
+    color: rgb(144,40,40);
+    font-weight: bold;
+}
+.BMWM3 .detailsB p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    margin: 10px;
+}
+.price-sectionB {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price-sectionB .priceB {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+.price-sectionB button {
+    background: rgb(144,40,40);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+.price-sectionB button:hover {
+    background: #3d1a1a;
+}/* Стиль контейнера BMW M3*/
+
+/* Стиль контейнера LandCruiser*/
+.LandCruiser {
+    background: rgba(255, 255, 255, 0.339);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: auto;
+    
+}
+.LandCruiser img.lc {
+    width: 160px;
+    height: 140px;
+    border-radius: 8px;
+    outline: 2px solid rgb(144,40,40);
+    box-shadow:10px 5px 5px #3d1a1a;
+    margin: 10px;
+    object-fit: contain;
+}
+.detailsL{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.LandCruiser .detailsL a {
+    color: rgb(144,40,40);
+    font-weight: bold;
+}
+.LandCruiser .detailsL p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    margin: 10px;
+}
+.price-sectionL {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price-sectionL .priceL {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+.price-sectionL button {
+    background: rgb(144,40,40);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+.price-sectionL button:hover {
+    background: #3d1a1a;
+}/* Стиль контейнера LandCruiser*/
+.fleetps{
+    background-image: linear-gradient(to right, rgba(144,40,40,1) 0%, #3d1a1a 100%);
+    color: #fff;
+    border: none;
+    padding: 15px 150px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.fleetps:hover {
+    background: #3d1a1a;
+}
+/*Стиль дива с автопарком*/
+
+/*Стиль футера*/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: radial-gradient(circle, rgba(144, 40, 40, 1) 0%, #3d1a1a 100%);
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    color: #fafaff;
+}
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content, .conditions, .fleet {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+
+    .content, .conditions, .fleet {
+        width: 100%;
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 30px 0;
+        flex-direction: column;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .content, .conditions, .fleet {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .fleetps {
+        padding: 10px 50px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+}

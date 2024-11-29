@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Light.Speed</title>
+</head>
+<body>
+<header>
+    <h1>Салон проката автомобилей</h1>
+    <nav>
+        <div class="header__item">
+        <a href="index.html">Главная</a></div>
+        <div class="header__item">
+        <a href="models.html">Автопарк</a></div>
+        <div class="header__item">
+        <a href="rent.html">Условия аренды</a></div>
+        <div class="header__item">
+        <a href="about.html">О компании</a></div>
+    </nav>
+</header>
+
+<div class="content">
+    <h1>Выберите авто на нужные даты в городе Красноярск</h1>
+    <div class="start">
+        
+        <input  type="date" id="start" name="trip-start">
+        <input  type="time" id="timestart" name="timestart">
+    </div>
+    <div class="end">
+    <input  type="date" id="end" name="trip-end">
+    <input  type="time" id="timend" name="timend">
+    </div>
+    <div>
+    <form>
+        <select name="city" id="city-select">
+          <option value="">--Выберите класс--</option>
+          <option value="1">Эконом</option>
+          <option value="2">Комфорт</option>
+          <option value="3">Бизнес</option>
+          <option value="4">Минивэн</option>
+          <option value="5">Внедорожник</option>
+        </select>
+      </form>
+      <button class="pick">Показать</button></div></div>
+<hr>
+<div class="conditions">
+    <h1>Условия аренды автомобиля</h1>
+    <h3>Мы заботливо относимся к нашим автомобилям и тщательно следим за их состоянием, поэтому для нас важно обязательное соблюдение некоторых условий нашей компании при аренде автомобиля.</h3>
+    
+    <div class="divind">
+        <div class="onediv">
+            <div class="experienced"><img class="deadline" src="deadline.png"><label for="deadline">Минимальный срок аренды от 1-х суток</label></div>
+            <div class="deadlined"><img class="experience" src="experience.png"><label for="experience">Стаж вождения от 3 лет</label></div>
+        </div>
+        <div class="twodiv">
+            <div class="aged"><img class="age" src="age.png"><label for="age">Возраст арендатора от 21 года</label></div>
+            <div class="visad"><img class="visa" src="visa.png"><label for="visa">Наличие паспорта РФ с действуйющей пропиской</label></div>
+        </div>
+    </div>   
+</div>
+<hr>
+<div class="fleet">
+    <h1>Автопарк</h1>
+    <div class="cars">
+        <div class="LADAGranta">
+            <img class="ld" src="lada_granta.webp" alt="LADA Granta">
+            <div class="details">
+                <a>LADA Granta</a>
+                <p>LADA Granta – практичный и надежный городской седан бюджетного класса. Переднеприводный автомобиль характеризуется стильной внешностью, просторным салоном и высокотехнологичным функциональным оснащением.</p>
+            </div>
+            <div class="price-section">
+                <p class="price">от 2 080 руб./сутки</p>
+                <button>Арендовать</button>
+            </div>
+        </div>
+        <div class="HavalJolion">
+            <img class="hj" src="Haval_JOLION.png" alt="Haval Jolion">
+            <div class="detailsH">
+                <a>Haval Jolion</a>
+                <p>Haval Jolion - кроссовер современного дизайна, который сочетает в себе стиль, комфорт и высокие технологии. Просторный салон с качественными материалами отлично подходит для длительных поездок, а удобные функции связи и управления делают поездки еще более комфортными.</p>
+            </div>
+            <div class="price-sectionH">
+                <p class="priceH">от 4 500 руб./сутки</p>
+                <button>Арендовать</button>
+            </div>
+        </div>
+        <div class="BMWM3">
+            <img class="bm" src="BMW M3.png" alt="BMW M3">
+            <div class="detailsB">
+                <a>BMW M3</a>
+                <p>BMW M3 — это спортивный седан, который сочетает в себе элегантный дизайн, высокую производительность и передовые технологии. Интерьер автомобиля выполнен с использованием премиальных материалов, обеспечивая комфорт и стиль как для водителя, так и для пассажиров. Мощный двигатель и точная управляемость делают M3 идеальным выбором как для городских дорог, так и для гоночных трасс.</p>
+            </div>
+            <div class="price-sectionB">
+                <p class="priceB">от 7 000 руб./сутки</p>
+                <button>Арендовать</button>
+            </div>
+        </div>
+        <div class="LandCruiser">
+            <img class="lc" src="LAn.png" alt="Land Cruiser">
+            <div class="detailsL">
+                <a>Toyota Land Cruiser Prado</a>
+                <p>Toyota Land Cruiser Prado — это внедорожник, который сочетает в себе прочность, элегантный дизайн и передовые технологии. Просторный и роскошный салон с использованием высококачественных материалов обеспечивает комфорт даже в самых длительных поездках. Мощная система полного привода и интеллектуальные системы управления позволяют преодолевать сложные дорожные условия с уверенностью.</p>
+            </div>
+            <div class="price-sectionL">
+                <p class="priceL">от 14 670 руб./сутки</p>
+                <button>Арендовать</button>
+            </div>
+        </div>
+    </div>
+    <button class="fleetps">Показать еще</button>
+</div>
+<footer class="footer">
+    <p>&copy; 2024 Прокат автомобилей. Все права защищены.</p>
+</footer>
+<script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
